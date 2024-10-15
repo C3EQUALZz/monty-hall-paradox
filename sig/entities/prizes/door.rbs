@@ -1,7 +1,0 @@
-class Door
-  attr_reader is_open: bool
-  attr_reader prize: BasePrize
-
-  def has_prize?: -> bool
-  def open: -> nil
-end

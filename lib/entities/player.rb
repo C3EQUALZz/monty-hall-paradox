@@ -1,13 +1,29 @@
 # frozen_string_literal: true
 
-class Player
-  attr_accessor :selected_door
+require_relative '../core/interfaces/observable'
 
-  def choose_door(doors)
-    @selected_door = doors.sample
+class Player
+  include Observable
+
+  attr_accessor :selected_door, :doors
+
+  def initialize(doors)
+    @observers = []
+    @doors = doors
+    @selected_door = nil
   end
 
-  def switch_choice(doors, host_opened_door)
-    @selected_door = (doors - [@selected_door, host_opened_door]).first
+  def choose_door(index)
+    if index.between?(0, @doors.size - 1)
+      @selected_door = @doors[index]
+      notify_all_observers
+    else
+      raise ArgumentError, "Invalid door index"
+    end
+  end
+
+  def switch_choice(host_opened_door)
+    @selected_door = (@doors - [@selected_door, host_opened_door]).first
   end
 end
+

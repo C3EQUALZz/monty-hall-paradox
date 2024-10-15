@@ -1,0 +1,6 @@
+module Observable
+  @observers: Array[Observer]
+  def add_new_observer: (Observer) -> void
+  def remove_observer: (Observer) -> void
+  def notify_all_observers: (Observer) -> void
+end

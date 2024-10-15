@@ -1,3 +1,0 @@
-class Player
-  attr_accessor selected_door: untyped
-end

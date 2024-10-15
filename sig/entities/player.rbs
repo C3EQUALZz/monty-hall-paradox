@@ -1,0 +1,8 @@
+class Player
+  attr_accessor doors: Array[Door]
+  attr_accessor selected_door: Door?
+
+
+  def choose_door: -> nil
+  def switch_choice: -> nil
+end

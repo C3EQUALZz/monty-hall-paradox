@@ -1,0 +1,3 @@
+module Observer
+  def update: -> nil
+end

@@ -1,0 +1,5 @@
+class Host
+  @doors: Array[Door]
+
+  def update: -> nil
+end
