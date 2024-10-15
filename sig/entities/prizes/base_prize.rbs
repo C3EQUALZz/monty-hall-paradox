@@ -1,0 +1,3 @@
+class BasePrize
+  attr_reader name: String
+end
