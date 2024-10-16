@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-require_relative "lib/Monty/Hall/Paradox/version"
+require_relative "lib/main"
 
 Gem::Specification.new do |spec|
   spec.name = "Monty-Hall-Paradox"
-  spec.version = Monty::Hall::Paradox::VERSION
+  spec.version = VERSION
   spec.authors = ["c3equalz"]
   spec.email = ["dan.kovalev2013@gmail.com"]
 
