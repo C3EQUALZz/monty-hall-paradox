@@ -1,4 +1,6 @@
 class Player
+  @observers: Array[Observer]
+
   attr_accessor doors: Array[Door]
   attr_accessor selected_door: Door
 

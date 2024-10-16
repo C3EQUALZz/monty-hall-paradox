@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
-require "Monty/Hall/Paradox"
+require_relative "../lib/entities/door"
+require_relative "../lib/entities/host"
+require_relative "../lib/entities/player"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

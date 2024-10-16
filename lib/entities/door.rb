@@ -20,6 +20,10 @@ class Door
     puts "Door #{@id} is opened! It's a #{@prize.name}!"
   end
 
+  def close
+    @is_opened = false
+  end
+
   def to_s
     prize_type = has_car? ? "Car" : "Goat"
     status = @is_opened ? "opened" : "closed"
