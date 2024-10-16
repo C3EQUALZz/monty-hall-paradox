@@ -1,5 +1,7 @@
 class Host
   @doors: Array[Door]
 
+  attr_reader opened_door: Door?
+
   def update: -> nil
 end

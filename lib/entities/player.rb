@@ -10,10 +10,11 @@ class Player
   def initialize(doors)
     @observers = []
     @doors = doors
-    @selected_door = nil
+    @selected_door
   end
 
   def choose_door(index)
+    index -= 1
     if index.between?(0, @doors.size - 1)
       @selected_door = @doors[index]
       notify_all_observers
