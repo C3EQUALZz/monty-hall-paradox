@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-VERSION = "0.1.0"
-
 require_relative './entities/door'
 require_relative './entities/host'
 require_relative './entities/player'

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative "./lib/main"
+require_relative "./lib/version"
 
 Gem::Specification.new do |spec|
   spec.name = "Monty-Hall-Paradox"
